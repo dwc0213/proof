@@ -9,8 +9,9 @@ Certificate of Employment
 
 3. 등록을 하게 되면 proc.php로 이동되어 $type변수로 선언된 write case를 수행한다. 사내직원정보 wo_member, 회사정보 wo_setup, 재    직증명서 wo_proof 테이블을 불러와서 wo_proof테이블에 insert하고 list.php 페이지로 이동한다.
 
-4. list.php에는 재직증명서를 등록한 직원들의 정보와 내역이 노출된다.
+4. list.php에는 재직증명서를 등록한 직원들의 정보와 내역이 노출되고, search.php가 include가 되어있어서 직원이나 사용용도를 선택하    고 클릭했을때 직원의 정보로 등록이 되어있으면 화면에 list로 뿌려지고, 등록이 되어있지 않으면 '등록된 자료가 없습니다'라고 화면에    뿌려진다.
 
 5. list.php에 직원들의 정보를 클릭하게 되면 view.php로 넘어가서 재직증명서 양식을 볼 수 있고 프린터 출력이 가능하다.
 
 6. 인쇄를 클릭했을 때는 printSet.php로 이동하고 alert으로 "현재 페이지를 출력하시겠습니까?"가 나왔을때 예를 클릭하면                print_ok.php로 페이지 이동이 되고 화면에는 기존 프린터 출력하는 페이지가 나와서 인쇄를 누르면 재직증명서 출력이 된다.
+
